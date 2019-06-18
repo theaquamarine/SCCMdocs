@@ -213,7 +213,8 @@ Example [Client Install] section entry: `Install=INSTALL=ALL SMSSITECODE=ABC SMS
 
 ### /forceinstall
 
- Specify that CCMSetup.exe uninstalls any existing client, and installs a new client.  
+ Specify that CCMSetup.exe uninstalls any existing client, and installs a new client. 
+"iirc /forceinstall doesn't do the exact same thing as uninstall then reinstall, one of the differences being how it approaches the client wmi. if client's wmi is corrupted, uninstall and install will clear and fix (the clearing happens during the install), /forceinstall will not"
 
 ### /ExcludeFeatures:&lt;feature\>
 
